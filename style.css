@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Pacifico", cursive;
+  }
+  body {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(
+      -45deg,
+      #297373,
+      #e815f0,     
+      #557ac9,
+      #e9d758
+    );
+    background-size: 250% 250%;
+    animation: gradient 5s ease infinite;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+  .main {
+    position: relative;
+    width: 400px;
+    height: 650px;
+    background-color: white;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    padding: 10px;
+  
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 5px;
+  }
+  .hello {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 30%;
+  }
+  .form {
+    margin-left: 50px;
+    margin-top: 10px;
+    padding: 5px;
+    
+   
+  }
+  span {
+    display: block;
+    color: gray;
+    font-size: small;
+  }
+  
+  input {
+    width: 300px;
+  
+    height: 30px;
+    border: none;
+    border: 1px;
+    border-bottom-style: solid;
+    border-color: grey;
+  }
+  select {
+    width: 300px;
+    height: 30px;
+    border: none;
+    border: 1px;
+    border-bottom-style: solid;
+    border-color: grey;
+    font-size: small;
+  }
+  input:focus {
+    outline: 0;
+    box-shadow: 0px 2px 5px grey;
+  }
+  
+  input::placeholder {
+    opacity: 0.4;
+  }
+  .budget {
+    height: 130px;
+  }
+  button{
+     
+    width: 300px;
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+    
+    color: white;
+    font-size:medium;
+    background-image: linear-gradient(
+        -45deg,
+        #297373,
+        #e815f0,     
+        #557ac9,
+        #e9d758
+      );
+  }
+  
+  button:hover {
+      outline: 0;
+      box-shadow: 10px 10px 20px grey;
+    }
+    .copyright{
+        margin-left: 120px;
+        padding: 30px;
+        font-size: 15px !important;
+        opacity: 0.4;
+  
+    }
