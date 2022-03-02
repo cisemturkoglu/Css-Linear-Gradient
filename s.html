@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Say Hello!</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            min-width: 100vw;
+            min-height: 100vh;
+            background: linear-gradient(45deg, #21bfe6, #d719f4);
+            position: relative;
+        }
+        .content {
+           display:inline-flex;
+           flex: auto;
+           width: 27%;   
+           height: 90%;
+           border-radius: 2%;
+           background-color:white;
+           box-sizing: border-box;
+           position: absolute;
+           left: 50%;
+           top: 50%;
+           transform: translateX(-50%) translateY(-50%);
+        }
+        .main {
+            margin: 70px 40px 30px 40px;           
+        }
+        .text{
+            display:inline-flex;
+            position: absolute;
+            align-items: center;
+            top: 21px;
+            left: 30%;
+            margin-bottom: 20px;
+            color: black;
+            font-size: 30px;
+            font-weight: 800;
+        }
+        .form-group{
+            display:inline-flex;
+            width: calc(100% - 8px);
+            height:70px;
+            background-color: white;
+            flex-direction: column;
+            font-size: 12px;
+            font-family: 'Poppins',sans-serif;
+            margin-top: 10px;
+        }
+        input[type=text]{
+            height: 15x;
+            border-bottom: solid 1px;
+            width: calc(100% - 4px);
+            padding: 0 0 5px;
+            font-size: 12px;
+            font-family: 'Poppins,'sans-serif;
+            border-color: rgb(216, 213, 210);
+            margin-top: 3px;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            text-align: start;
+        }
+        input:focus {
+            border: 0px;
+            outline: none;
+        }
+        select{
+            display:inline-flex;
+            position: absolute;
+            width: calc(100% - 88px);
+            padding: 0 0 3px;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            margin-top: 5px;
+            padding-bottom: 5px;
+            border-bottom: solid 1px;
+            border-color: rgb(202, 199,195);
+            font-family:'Poppins',sans-serif;
+            font-weight:500;
+            color: black;
+            padding-left: 0px;
+            text-align: start;
+            
+        }   
+        select:focus{
+            color:rgb(202, 199,195);
+            outline: none;
+        } 
+        textarea{
+        width: calc(100% - 8px);
+           height: 45px;
+           border-top: none;
+           border-left: none;
+           border-right: none;
+           border-color: rgb(216, 213, 210);
+           padding-bottom: 40px;
+           font-family:'Poppins', sans-serif;
+           text-align: start;
+        }
+        textarea:focus{
+            outline: none;
+        }
+        div.textarea{
+            font-size: 12px;
+            color: rgb(104, 94, 94);
+        }
+        button{
+            width: 80%;
+            height: 30px;
+            border: none;
+            position: absolute;
+            background:linear-gradient(45deg, #d719f4 0%,#21bfe6 100%);
+            border-radius: 20px;
+            left: 10%;
+            bottom: 18px;
+            font-weight: medium;
+            font-size: 12px;
+            color: white;
+            font-weight: 480;
+        }       
+    </style>
+</head>
+<body>
+    <div class="content" >
+        <div class="main">
+            <div class="text"<h1>Say Hello!</h1>
+            </div>
+            <div class="form-group" <label>Your Name</label>
+                <input type="text" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group" <label>Email</label> 
+                    <input type="text" placeholder="Enter Your Email Address">
+            </div>
+            <div class="form-group" <label>Needed Services<label>
+                <select>   
+                    <option selected value="1">Service 4</option>
+                    <option selected value="2">Service 3</option>
+                    <option selected value="3">Service 2</option>
+                    <option selected value="4">Service 1</option> 
+                    <option selected value="" disabled selected hidden>Choose Services</option>                  
+                </select>
+            </div>
+            <div class="form-group" <label>Budget<label>
+                <select>                  
+                    <option selected value="1">Budget 4</option>
+                    <option selected value="2">Budget 3</option>
+                    <option selected value="3">Budget 2</option>
+                    <option selected value="4">Budget 1</option>     
+                    <option selected value="" disabled selected hidden>Select Budget</option>              
+                </select>
+            </div>
+            <div>
+                <div class="textarea" <label1>Message </label1></div>             
+               <textarea placeholder="Your message here"></textarea>              
+            </div> 
+        <button class="Button">Submit → </button>
+    </div>
+</body>
+</html> 
